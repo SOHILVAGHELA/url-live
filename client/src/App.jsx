@@ -14,7 +14,7 @@ const App = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:6060/api/url/shorten",
+        "https://url-live.onrender.com/api/url/shorten",
         { originalUrl: url }
       );
       setShortUrl(response.data.shortId);
@@ -47,7 +47,7 @@ const App = () => {
             <div className="short-url mt-3">
               <p>Your short URL:</p>
               <a
-                href={`http://localhost:6060/api/url/${shortUrl}`}
+                href={`https://url-live.onrender.com/api/url/${shortUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
