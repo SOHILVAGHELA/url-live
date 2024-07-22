@@ -1,1 +1,74 @@
+svg,
+img {
+  max-width: 100%;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.url-container {
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
 
+.icons {
+  align-items: center;
+}
+.icon-color {
+  background-color: rgb(9, 128, 161);
+  color: white;
+}
+.icon-color-forward {
+  border: 1px solid rgb(9, 128, 161);
+}
+.icon-color-copy {
+  background-color: #1f8244;
+  color: white;
+}
+.form-control {
+  color: green;
+}
+.btn-lg {
+  color: white;
+}
+.btn-bg {
+  background-color: rgb(31, 130, 68);
+  color: white;
+}
+.btn-bg:hover {
+  background-color: rgb(31, 130, 75);
+  color: white;
+}
+
+.background-img {
+  background: linear-gradient(180deg, #002342, #0bc9e3 132.49%);
+  background-attachment: fixed;
+  background-color: #002342;
+  background-size: cover;
+  bottom: 0;
+  height: 100dvh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.background-img-top {
+  height: 200px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 400px;
+}
+.background-img-bottom {
+  background-position: 100% 100%;
+  bottom: 0;
+  height: 100dvh;
+  position: fixed;
+  right: 0;
+  width: 100vw;
+}
