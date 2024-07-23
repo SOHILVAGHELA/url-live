@@ -114,6 +114,7 @@ function App() {
                     </div>
                     <input
                       value={url}
+                      disabled
                       required
                       placeholder="Enter long link here"
                       type="text"
@@ -131,9 +132,9 @@ function App() {
                       className="form-control form-control-lg py-2 px-6"
                     />
                   </div>
-                  <div className="d-flex mt-2 justify-content-around icons">
+                  <div className="d-flex mt-2 justify-content-around flex-wrap  icons">
                     <span
-                      className="btn border py-2 px-3 "
+                      className="btn border m-1 py-2 px-3 "
                       aria-label="Share"
                       data-tooltip-id="my-tooltip"
                       data-tooltip-content="Open link"
@@ -143,7 +144,7 @@ function App() {
                       </a>
                     </span>
                     <span
-                      className="btn btn-info text-white"
+                      className="btn btn-info m-1 text-white"
                       onClick={handleQr}
                       aria-label="QR Code"
                       data-tooltip-id="my-tooltip"
@@ -152,7 +153,7 @@ function App() {
                       <IoQrCodeOutline /> QR
                     </span>
                     <span
-                      className="btn btn-info text-white"
+                      className="btn btn-info m-1 text-white"
                       onClick={toggleShareModal}
                       aria-label="Share"
                       data-tooltip-id="my-tooltip"
@@ -165,7 +166,7 @@ function App() {
                       onCopy={() => setCopied(true)}
                     >
                       <span
-                        className="btn btn-bg  "
+                        className="btn btn-bg m-1 "
                         data-tooltip-id="my-tooltip"
                         data-tooltip-content={isCopied ? "COPIED" : "COPY"}
                       >
