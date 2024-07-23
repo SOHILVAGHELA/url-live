@@ -17,7 +17,7 @@ app.use(cors());
 connectToMongoDB(MONGODB_URL);
 
 // Define routes
-app.use("/api/url", UrlRoute);
+app.use("/", UrlRoute);
 
 // Start server
 app.listen(PORT, () => {
