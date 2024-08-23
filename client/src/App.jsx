@@ -49,6 +49,10 @@ function App() {
   const handleQr = () => {
     toggleQRModal();
   };
+  const handleReuse = () => {
+    setUrl("");
+    setShortid("");
+  };
 
   const shareUrl = `https://url-live.onrender.com/${shortid}`;
 
@@ -176,6 +180,13 @@ function App() {
                     </CopyToClipboard>
                     <Tooltip id="my-tooltip" />
                   </div>
+                  <button
+                    type="button"
+                    className="form-control btn btn-lg btn-dark fw-semibold px-2 mt-2"
+                    onClick={handleReuse}
+                  >
+                    Next
+                  </button>
                 </>
               )}
             </form>
