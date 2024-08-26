@@ -185,7 +185,7 @@ function App() {
                     className="form-control btn btn-lg btn-dark fw-semibold px-2 mt-2"
                     onClick={handleReuse}
                   >
-                    Next
+                    Another Url
                   </button>
                 </>
               )}
